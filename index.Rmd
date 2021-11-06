@@ -9,4 +9,20 @@ output:
 
 # This is Jessica's personal website
 
-Hi, my name is 
+Hi, my name is Shiwei Chen, and I have a preferred name is Jessica. 
+
+I want to use this website introduce myself.
+
+I have a really cute cat, his name is Luca. I wanna share his photo here.
+
+
+## My favorite photo
+
+![](images/luca.jpg)
+
+
+## Link to the page about me
+
+[About me](about.html)
+
+

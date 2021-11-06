@@ -1,0 +1,37 @@
+---
+title: "About me"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cerulean
+---
+
+# This page has more information about me
+
+I am taking my master program in the Columbia university-Mailman school of public health.
+
+
+## My contact
+
+E-mail address:
+
+*[Academic](sc4935@cumc.columbia.edu)
+
+*[Personal](jcsw1216@gmail.com)
+
+
+## My resume
+
+
+
+## My links
+
+These are links about me:
+
+* [Linkedin](https://www.linkedin.com/in/shiwei-chen-gic942)
+
+* [Github](https://github.com/gic94)
+
+
+
