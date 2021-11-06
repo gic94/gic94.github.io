@@ -25,3 +25,6 @@ I have a really cute cat, his name is Luca. I wanna share his photo here.
 [About me](about.html)
 
 
+## Link to the page about my dashboard
+
+[Dashboard](dashboard.html)

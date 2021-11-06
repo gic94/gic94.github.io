@@ -1,0 +1,59 @@
+---
+title: "Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(plotly)
+
+library(flexdashboard)
+```
+
+```{r}
+library(p8105.datasets)
+data("instacart")
+```
+
+```{r}
+instacart_df = count(instacart, aisle) %>% 
+  mutate(aisle = factor(aisle)) 
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+instacart_df %>% 
+  mutate(aisle = reorder(aisle, n)) %>%      
+  filter(n > 10000) %>%                      
+  plot_ly(x = ~aisle, y = ~n, type = "bar", color = ~aisle, alpha = 0.5)
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+instacart %>% 
+  count(order_dow, department) %>%
+  rename(order_number = n, day_of_week = order_dow) %>%
+  mutate(day_of_week = as.factor(day_of_week)) %>% 
+  plot_ly(x = ~day_of_week, y = ~order_number, color = ~department, type = "scatter", mode = "line")
+```
+
+### Chart C
+
+```{r}
+instacart %>% 
+  select(order_number,order_hour_of_day, department) %>%
+  mutate(department = as.factor(department)) %>%
+  plot_ly(y = ~order_hour_of_day, color = ~department, type = "box")
+```
+
