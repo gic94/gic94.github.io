@@ -11,6 +11,8 @@ navbar:
       href: http://github.com/gic94/
     - text: "Dashboard"
       href: dashboard.html
+    - text: "Plotly"
+      href: plotly.html
 output:
   html_document:
     theme: cerulean

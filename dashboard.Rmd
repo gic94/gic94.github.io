@@ -54,6 +54,6 @@ instacart %>%
 instacart %>% 
   select(order_number, order_hour_of_day, department) %>%
   mutate(department = as.factor(department)) %>%
-  plot_ly(y = ~order_hour_of_day, color = ~department, type = "box")
+  plot_ly(x = ~department, y = ~order_hour_of_day, color = ~department, type = "box")
 ```
 
