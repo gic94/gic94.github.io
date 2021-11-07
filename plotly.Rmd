@@ -1,9 +1,9 @@
 ---
-title: "Flexdashboard"
+title: "Plotly"
 output: 
-  flexdashboard::flex_dashboard:
-    orientation: columns
-    vertical_layout: fill
+  html_document:
+    toc: true
+    toc_float: true
 ---
 
 ```{r, echo=FALSE, message=FALSE}
