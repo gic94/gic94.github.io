@@ -17,4 +17,4 @@ navbar:
       href: plotly.html
 output:
   html_document:
-    theme: cerulean
+    theme: yeti
