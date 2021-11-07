@@ -1,5 +1,5 @@
 ---
-title: "Dashboard"
+title: "dashboard"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -9,7 +9,7 @@ output:
 ```{r setup, include=FALSE}
 library(tidyverse)
 library(plotly)
-
+library(ggridges)
 library(flexdashboard)
 ```
 
@@ -20,7 +20,9 @@ data("instacart")
 
 ```{r}
 instacart_df = count(instacart, aisle) %>% 
-  mutate(aisle = factor(aisle)) 
+  mutate(aisle = factor(aisle)) %>% 
+  mutate(aisle_ranking = min_rank(desc(n)))  
+
 ```
 
 Column {data-width=650}
@@ -52,8 +54,8 @@ instacart %>%
 
 ```{r}
 instacart %>% 
-  select(order_number, order_hour_of_day, department) %>%
+  select(order_number,order_hour_of_day, department) %>%
   mutate(department = as.factor(department)) %>%
-  plot_ly(x = ~department, y = ~order_hour_of_day, color = ~department, type = "box")
+  plot_ly(y = ~order_hour_of_day, color = ~department, type = "box")
 ```
 

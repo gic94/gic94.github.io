@@ -8,16 +8,18 @@ output:
 
 # This page has more information about me
 
-I am taking my master program in the Columbia university-Mailman school of public health.
+I graduated from City university of New York-Hunter college, my major is Math.
+
+I am taking my master program of Biostatistics in the Columbia university-Mailman school of public health.
 
 
 ## My contact
 
 E-mail address:
 
-*[Academic](sc4935@cumc.columbia.edu)
+Academic: sc4935@cumc.columbia.edu
 
-*[Personal](jcsw1216@gmail.com)
+Personal: jcsw1216@gmail.com
 
 
 ## My resume

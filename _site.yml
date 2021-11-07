@@ -9,6 +9,8 @@ navbar:
       href: mailto:<jcsw1216@gmail.com>
     - icon: fa-github fa-lg
       href: http://github.com/gic94/
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/shiwei-chen-gic942
     - text: "Dashboard"
       href: dashboard.html
     - text: "Plotly"

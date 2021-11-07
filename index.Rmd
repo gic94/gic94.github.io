@@ -28,3 +28,11 @@ I have a really cute cat, his name is Luca. I wanna share his photo here.
 ## Link to the page about my dashboard
 
 [Dashboard](dashboard.html)
+
+About the data:
+
+Instacart is an online grocery service that allows you to shop online from local stores. In New York City, partner stores include Whole Foods, Fairway, and The Food Emporium. Instacart offers same-day delivery, and items that users purchase are delivered within 2 hours.
+
+My work:
+
+I cleaned the Instacart data first, then filtered some key variables. Thus, I can evaluate their relationships. 
